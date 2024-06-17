@@ -1,5 +1,7 @@
 # Welcome To My Portfolio
+This portfolio will contain all of my data project.
 
-# About Me
-My name is Prateep Panyanontakarn. I am studying Master Degree in Data Science at Srinakharinwirot University (Expected to graduate in 2025). I am looking 
+# Projects 
+* Drinker Classification By Body Signal
+* Fraud Detection of Online Payment
 

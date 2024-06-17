@@ -18,12 +18,3 @@
 
 ## Dataset
 [Fraud Detection of Online Payment](https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection/data)
-
-
-## Tools
-* Pandas
-* Numpy
-* Seaborn
-* Matplotlib
-* Scikit-Learn
-* Imbalanced-learn

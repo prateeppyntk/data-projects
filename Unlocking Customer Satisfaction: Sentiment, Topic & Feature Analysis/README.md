@@ -12,18 +12,3 @@
 
 ## Dataset
 [Amazon Product Reviews: Automotive Product Category](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews)
-
-
-## Tools
-* pandas
-* numpy
-* string
-* re
-* BeautifulSoup
-* Counter
-* wordcloud
-* seaborn
-* matplotlib
-* scikit-Learn
-* imbalanced-learn
-* nltk

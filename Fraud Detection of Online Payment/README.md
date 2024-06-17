@@ -11,10 +11,15 @@
 * Finally, we will observe the model which used PCA how difficult it is to misclassify points.
 
 
-## Objectives
-1. To classification fraud and non-fraud transcation from payment details.
-2. To explore the payment type and transaction payment amount where fraud occurs most.
+## Problems
+1. Can we classify fraud transactions based on payment details? And what is the best way to integrate the model to achieve high performance?
+2. What types of transactions will have the highest amount of fraud?
+3. Most of fraud transactions fall between what amounts?
 
 
-## Dataset
-[Fraud Detection of Online Payment](https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection/data)
+## Tools 
+Python
+
+
+## Results
+

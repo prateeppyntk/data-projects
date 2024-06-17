@@ -2,7 +2,13 @@
 
 
 ## About Project
-Because of imbalanced data of dataset.
+* Because dataset is imbalanced, so we will use 3 techniques (Oversampling, Undersampling, and SMOTE) and evaluation using Random Forest Classifier model.
+
+* Proform feature selection using Permutation Feature Importance method and dimensionality reduction using Principal Component Analysis (PCA) method.
+
+* Compare the performance of 3 models which are Logistic Regression, Support Vector Machine (SVM), and Gradient Boosting when use with each solution (full features, feature selection, and dimensionality reduction). Then we will tune it again for finding the best parameters and also evaluate with test/unseen data.
+
+* Finally, we will observe the model which used PCA how difficult it is to misclassify points.
 
 
 ## Objectives

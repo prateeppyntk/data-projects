@@ -9,10 +9,10 @@
 * Last, we will compare their performances with test/unseen data.
 
 
-## Problems
-1. Can we use the body signal to distinguish between drinker and non-drinker?
-2. Are drinkers more likely to have abnormal blood pressure than non-drinkers?
-3. Are drinkers more likely to have abnormal blood test results than non-drinkers?
+## Hypothesis
+1. We can use the body signal to distinguish between drinker and non-drinker.
+2. Drinkers more likely to have abnormal blood pressure than non-drinkers.
+3. Drinkers more likely to have abnormal blood test results than non-drinkers.
 
 
 ## Tools 

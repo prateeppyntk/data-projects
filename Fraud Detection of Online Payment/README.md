@@ -11,8 +11,8 @@
 * Finally, we will build Support Vector Machine model by using Random Under Sampling technique, and doing PCA with 2 components. Then visualize the results and observe in the model how difficult it is to identify the defect.
 
 
-## Problems
-1. Can we classify fraudulent transactions based on payment details? And what is the best way to integrate the model to achieve high performance?
+## Hypothesis 
+1. We can classify fraudulent transactions based on payment details.
 2. What types of transactions will have the highest amount of fraud?
 3. Most of fraudulent transactions fall between what amounts?
 

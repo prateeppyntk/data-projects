@@ -19,5 +19,5 @@ Python
 The result shows that the performance of Logistic Regression model is higher than K-Nearest Neighbors Classification model with Accuracy = 0.72096 and AUC = 0.800294. So we think that Logistic Regression model is better and suitable for this dataset and task.
 
 
-## [More] Medium Blog
+## [Read More] Medium Blog
 [การจำแนกผู้ที่ดื่มแอลกอฮอล์จากผลการตรวจร่างกาย (Drinker Classification By Body Signal)](https://medium.com/@pt.panyanontakarn/drinker-classification-by-body-signal-70ab367f3044)

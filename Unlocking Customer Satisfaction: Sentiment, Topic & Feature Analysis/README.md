@@ -20,9 +20,7 @@ Python
 
 
 ## Results
-* Based on the hypothesis that the results obtained from each analysis will be consistent with the sentiment of the respective groups.
-
-* After completing all the experiments, it was found that most of words that come from each sentiment reflected its group which we found this during exploratory data analysis step.
+* Based on the hypothesis that the results obtained from each analysis will be consistent with the sentiment of the respective groups. After completing all the experiments, it was found that most of words that come from each sentiment reflected its group which we found this during exploratory data analysis step.
 
 * And it was found that topic modeling was in line with our expectations, where each sentiment would have different topic or keywords. It might not be very clear for whole, but there is at least some difference.
 

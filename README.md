@@ -4,9 +4,9 @@ This portfolio will contain all of my data projects.
 ![alt text](image.png)
 
 # Projects 
-* [Sales Analysis - Using The Retail Sales Dataset](https://github.com/prateeppyntk/data-projects/blob/a895d3e56772ba8b9c7d7013635f1c04c31903a1/Sales%20Analysis%20Dashboard%20(Using%20The%20Retail%20Sales%20Dataset)/README.md)
+* [Sales Analysis - Using The Retail Sales Dataset](https://github.com/prateeppyntk/data-projects/tree/f188fd6f5183712306ab457484278df8e93a04f5/Sales%20Analysis%20(Using%20The%20Retail%20Sales%20Dataset))
 
-* [Sales Analysis - Using US Sales Dataset](https://github.com/prateeppyntk/data-projects/blob/a895d3e56772ba8b9c7d7013635f1c04c31903a1/Sales%20Analysis%20Dashboard%20(Using%20The%20Retail%20Sales%20Dataset)/README.md)
+* [Sales Analysis - Using US Sales Dataset](https://github.com/prateeppyntk/data-projects/tree/f188fd6f5183712306ab457484278df8e93a04f5/Sales%20Analysis%20(Using%20US%20Sales%20Dataset))
   
 * [Drinker Classification By Body Signal](https://github.com/prateeppyntk/data-projects/tree/99e4385ab85154468f5482e2ec6e661530248a25/Drinker%20Classification%20By%20Body%20Signal)
   

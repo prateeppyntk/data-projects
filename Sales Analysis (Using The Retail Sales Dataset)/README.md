@@ -18,4 +18,4 @@ Power BI
 
 
 ## Dashboard
-![sales_analysis_dashboard.jpg](sales_analysis_dashboard.jpg)
+![retail_sales_data.jpg](retail_sales_data.jpg)

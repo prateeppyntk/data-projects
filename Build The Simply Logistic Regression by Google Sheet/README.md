@@ -15,4 +15,4 @@
 ![alt text](Evaluation.jpg)
 
 ## Read More
-[Go To Google Sheet](https://docs.google.com/spreadsheets/d/12jumbfku9tRdP6cRD-UBnuYk2OJ2xKoIpHTITP-ijc4/edit?usp=sharing)
+[View on Google Sheet](https://docs.google.com/spreadsheets/d/12jumbfku9tRdP6cRD-UBnuYk2OJ2xKoIpHTITP-ijc4/edit?usp=sharing)

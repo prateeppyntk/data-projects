@@ -1,14 +1,14 @@
 .open restaurant.db
 
 
---DROP Table
+--DROP table
 DROP table menus;
 DROP table customers;
 DROP table members;
 DROP table invoices;
 DROP table ingrediants;
 
---Crate Tabel 1 = Menus 
+--Create and insert table menus 
 CREATE TABLE menus (
   menu_id int ,
   menu_name text,
@@ -21,7 +21,7 @@ insert into menus values
   (1005 , 'som tum' , 150),
   (1006 , 'tim sum' , 75);
 
---Create Table 2 = customers
+--Create and insert table customers
 CREATE TABLE customers (
   cust_id int ,
   cust_name text,
@@ -33,7 +33,7 @@ insert into customers values
   (123004 , 'Suchart' , 'P22' ),
   (123005 , 'Prateep' , null  );
 
---Crate Tabel 3 = members 
+--Create and insert table members 
 CREATE TABLE members (
   member_id text ,
   member_type text ,
@@ -44,7 +44,7 @@ insert into members values
   ('P21' , 'Silver' , 'Chiang Mai'),
   ('P22' , 'Silver' , 'Chonburi');
   
---Crate Tabel 4 = invoices
+--Create and insert table invoices
 CREATE TABLE invoices (
   tran_no int ,
   cust_id int ,
@@ -61,7 +61,7 @@ insert into invoices values
   (9 , 123004 ,1006 , 1 ),
   (10 , 123005 ,1004 , 2 );
 
---Crate Tabel 5 = ingrediants 
+--Create and insert table ingrediants
 CREATE TABLE ingrediants (
   ing_no int ,
   ing_name text,
@@ -88,7 +88,8 @@ insert into ingrediants values
 .mode column
 .header on
   
---Add and Update Column = dates Into Table = invoices
+
+--Add and update column: dates into table: invoices
 /*alter table invoices
   ADD dates TEXT;
 
@@ -113,12 +114,12 @@ update invoices
   where tran_no = 5;*/
 
 
-
 -- WITH = 3 (res1, res2, qtybyregion (result))
 -- Query = 5 (JOIN, WHERE, GROUP BY, ORDER BY, WHEN)
 -- Subqueries 
--- Result 'qtybyregion' shows the total of order quanity in each regions in thailand
+-- Result 'qtybyregion' shows the total of order quanity in each regions in Thailand
   
+
 with res1 as (
   select  * 
   from customers c
@@ -160,6 +161,7 @@ order by order_qty desc),
 -- Query = 4 (WHERE, GROUP BY, ORDER BY, WHEN)
 -- Subqueries 
 -- Result 'pfbymenu' shows selling price, sales amount, buying price, cogs amount, profit_loss, and also has the comment at price_analysis column that Which item needs to consider about its price.
+
 
 sales as (
   select 
@@ -210,4 +212,4 @@ group by menu
 order by profit_loss desc ))
 
 --You can choose table here
-select * from ;```
+select * from ;

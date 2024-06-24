@@ -11,7 +11,7 @@
 
 
 ## Tools 
-* PostgreSQL 
+* SQL 
 * Looker Studio
 
 

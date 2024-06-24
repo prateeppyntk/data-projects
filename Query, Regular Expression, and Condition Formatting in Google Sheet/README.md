@@ -1,7 +1,7 @@
 # Query, Regular Expression, and Condition Formatting in Google Sheet
 
 ## Tools
-Google Sheet 
+* Google Sheet 
 
 ## Results
 

@@ -4,7 +4,7 @@
 ## About Project
 * This project will do sentiment analysis by using machine learning model which is Random Forest Classifier model and Logistic Regression model that will be used to classify the review text into each sentiment including negative, neutral, and positive, do topic modeling using Latent Dirichlet Allocation (LDA), and do feature analysis. 
 
-* At the beginning of the project, we will do data preparing and text-prepocessing such as remove stopwords, do Lemmatization, create word tokenization, handle imbalanced data by Random Undersampling, perform text vectorization by TF-IDF, and others. 
+* At the beginning of the project, we will do data preparing and text-preprocessing such as remove stopwords, do Lemmatization, create word tokenization, handle imbalanced data by Random Undersampling, perform text vectorization by TF-IDF, and others. 
 
 * After we build the model, we will evaluate the results by using test/unseen data and analyze the data to answer the hypothesis questions that we have raised.
 

@@ -1,4 +1,4 @@
-# Salary Analysis in United State
+# US Salary Analysis Dashboard
 
 
 ## About Project

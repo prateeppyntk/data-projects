@@ -1,4 +1,4 @@
-# Drinker Classification By Body Signal
+# Drinker Classification by Body Signal
 
 
 ## About Project

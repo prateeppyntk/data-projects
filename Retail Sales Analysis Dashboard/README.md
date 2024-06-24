@@ -1,4 +1,4 @@
-# Sales Analysis (Using Retail Sales Dataset)
+# Retail Sales Analysis Dashboard
 
 
 ## About Project

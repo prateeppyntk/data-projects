@@ -1,4 +1,4 @@
-# Sales Analysis (Using US Sales Dataset)
+# US Sales Analysis Dashboard
 
 
 ## About Project

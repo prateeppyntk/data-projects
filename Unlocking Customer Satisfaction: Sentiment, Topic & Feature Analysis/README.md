@@ -16,7 +16,7 @@
 
 
 ## Tools 
-1. Python
+* Python
 
 
 ## Results

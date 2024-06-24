@@ -11,8 +11,8 @@
 
 
 ## Tools 
-1. PostgreSQL 
-2. Looker Studio
+* PostgreSQL 
+* Looker Studio
 
 
 ## Dashboard

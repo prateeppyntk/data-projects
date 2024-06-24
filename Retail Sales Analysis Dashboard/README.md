@@ -14,7 +14,7 @@
 
 
 ## Tools 
-1. Power BI
+* Power BI
 
 
 ## Dashboard

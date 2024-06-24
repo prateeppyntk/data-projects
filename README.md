@@ -12,7 +12,7 @@ This portfolio will contain all of my data projects.
 
 
 ## SQL
-1. [Create The Restaurant Database]()
+1. [Create The Restaurant Database](https://github.com/prateeppyntk/data-projects/tree/ea5e2e24fda87931e927977759b183971bd6a152/Create%20The%20Restaurant%20Database)
 
 
 ## SQL & Looker Studio
@@ -34,24 +34,24 @@ This portfolio will contain all of my data projects.
   
 3. [Unlocking Customer Satisfaction: Sentiment, Topic & Feature Analysis](https://github.com/prateeppyntk/data-projects/tree/99e4385ab85154468f5482e2ec6e661530248a25/Unlocking%20Customer%20Satisfaction%3A%20Sentiment%2C%20Topic%20%26%20Feature%20Analysis)
 
-4. [Chatbot Pizza Restaurant]()
+4. [Chatbot Pizza Restaurant](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BPython%5D%20Chatbot%20Pizza%20Restaurant.ipynb)
 
-5. [Pao Ying Chub Game]()
+5. [Pao Ying Chub Game](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BPython%5D%20Pao%20Ying%20Chub%20Game.ipynb)
 
-6. [Request Cryto Currency Data (By API)]()
+6. [Request Cryto Currency Data by API](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BPython%5D%20Request%20Cryto%20Currency%20Data%20(By%20API).ipynb)
 
-7. [Web Scrapping and Build Model from Condo Price Dataset]()
+7. [Web Scrapping and Build Model from Condo Price Dataset](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BPython%5D%20Web%20Scrapping%20and%20Build%20Model%20from%20Condo%20Price%20Dataset.ipynb)
 
-8. [ATM Process by Object Oriented Programming (OOP)]()
+8. [ATM Process by Object Oriented Programming (OOP)](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BPython%5D%20ATM%20Process%20by%20OOP.ipynb)
 
 
 ## R Programming
-1. [Chatbot Pizza Restaurant]()
+1. [Chatbot Pizza Restaurant](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BR%5D%20Chatbot%20Pizza%20Restaurant)
 
-2. [Pao Ying Chub Game]()
+2. [Pao Ying Chub Game](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BR%5D%20Pao%20Ying%20Chub%20Game)
 
-3. [Web Scrapping From IMDB]()
+3. [Web Scrapping from IMDB](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BR%5D%20Web%20Scrapping%20From%20IMDB.ipynb)
 
-4. [Web Scrapping Condo Price]()
+4. [Web Scrapping Condo Price](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BR%5D%20Web%20Scrapping%20Condo%20Price.ipynb)
 
-5. [Data Visualization of Diamond Dataset]()
+5. [Data Visualization of Diamond Dataset](https://github.com/prateeppyntk/data-projects/blob/ea5e2e24fda87931e927977759b183971bd6a152/%5BR%5D%20Data%20Visualization%20of%20Diamond%20Dataset.pdf)

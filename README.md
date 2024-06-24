@@ -5,7 +5,7 @@ This portfolio will contain all of my data projects.
 
 # Content of Projects
 
-* SQL & Looker Studio - [Salary Analysis](https://github.com/prateeppyntk/data-projects/tree/082b76b0ebb6e15296a5d45ce96c144264a405b2/Salary%20Analysis)
+* SQL & Looker Studio - [Salary Analysis in US](https://github.com/prateeppyntk/data-projects/tree/082b76b0ebb6e15296a5d45ce96c144264a405b2/Salary%20Analysis)
 
 * Power BI - [Sales Analysis - Using Retail Sales Dataset](https://github.com/prateeppyntk/data-projects/tree/f188fd6f5183712306ab457484278df8e93a04f5/Sales%20Analysis%20(Using%20The%20Retail%20Sales%20Dataset))
 

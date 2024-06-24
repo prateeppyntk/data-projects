@@ -1,0 +1,213 @@
+.open restaurant.db
+
+
+--DROP Table
+DROP table menus;
+DROP table customers;
+DROP table members;
+DROP table invoices;
+DROP table ingrediants;
+
+--Crate Tabel 1 = Menus 
+CREATE TABLE menus (
+  menu_id int ,
+  menu_name text,
+  menu_price real);
+insert into menus values 
+  (1001 , 'pizza' , 500),
+  (1002 , 'hamburger' , 200),
+  (1003 , 'sandwich' , 275),
+  (1004 , 'tom yum kung' , 350),
+  (1005 , 'som tum' , 150),
+  (1006 , 'tim sum' , 75);
+
+--Create Table 2 = customers
+CREATE TABLE customers (
+  cust_id int ,
+  cust_name text,
+  member_id text);  
+insert into customers values 
+  (123001 , 'Somsak', 'P11' ),
+  (123002 , 'Somjade' , 'P12' ),
+  (123003 , 'Anna'  , 'P21' ),
+  (123004 , 'Suchart' , 'P22' ),
+  (123005 , 'Prateep' , null  );
+
+--Crate Tabel 3 = members 
+CREATE TABLE members (
+  member_id text ,
+  member_type text ,
+  member_addr text);
+insert into members values 
+  ('P11' , 'Gold' , 'Bangkok'),
+  ('P12' , 'Gold' , 'Bangkok'),
+  ('P21' , 'Silver' , 'Chiang Mai'),
+  ('P22' , 'Silver' , 'Chonburi');
+  
+--Crate Tabel 4 = invoices
+CREATE TABLE invoices (
+  tran_no int ,
+  cust_id int ,
+  menu_id int ,
+  tran_qty int );
+insert into invoices values 
+  (1 , 123001 ,1001 , 2 ),
+  (2 , 123001 ,1003 , 1 ),
+  (3 , 123001 ,1006 , 1 ),
+  (4 , 123002 ,1004 , 1 ),
+  (5 , 123002 ,1005 , 2 ),
+  (7 , 123003 ,1002 , 1 ),
+  (8 , 123004 ,1001 , 5 ),
+  (9 , 123004 ,1006 , 1 ),
+  (10 , 123005 ,1004 , 2 );
+
+--Crate Tabel 5 = ingrediants 
+CREATE TABLE ingrediants (
+  ing_no int ,
+  ing_name text,
+  menu_id int,
+  ing_cost real);
+insert into ingrediants values 
+  (1.1 , 'cheese' , 1001 , 50.5),
+  (1.2 , 'flour' , 1001 , 50),
+  (1.2 , 'flour' , 1002 , 50),
+  (1.2 , 'flour' , 1003 , 50),
+  (1.2 , 'flour' , 1006 , 50),
+  (2.1 , 'pork' , 1002 , 80),
+  (2.2 , 'shrimp' , 1001 , 80.75),
+  (2.2 , 'shrimp' , 1004 , 80.75),
+  (2.2 , 'shrimp' , 1006 , 80.75),
+  (3.1 , 'tomato' , 1001 , 30),
+  (3.1 , 'tomato' , 1003 , 30),
+  (3.1 , 'tomato' , 1005 , 30),
+  (3.2 , 'lettuce' , 1002 , 40.25),
+  (3.3 , 'chili' ,1004 , 28.75),
+  (3.3 , 'chili' , 1005 , 28.75),
+  (3.4 , 'papaya' , 1005 , 20.5);
+
+.mode column
+.header on
+  
+--Add and Update Column = dates Into Table = invoices
+/*alter table invoices
+  ADD dates TEXT;
+
+update invoices
+  set dates = '2023-01-02'
+  where tran_no = 1;
+
+update invoices
+  set dates = '2023-01-20'
+  where tran_no = 2;
+
+update invoices
+  set dates = '2023-01-25'
+  where tran_no = 3;
+
+update invoices
+  set dates = '2023-02-10'
+  where tran_no = 4;
+
+update invoices
+  set dates = '2023-02-14'
+  where tran_no = 5;*/
+
+
+
+-- WITH = 3 (res1, res2, qtybyregion (result))
+-- Query = 5 (JOIN, WHERE, GROUP BY, ORDER BY, WHEN)
+-- Subqueries 
+-- Result 'qtybyregion' shows the total of order quanity in each regions in thailand
+  
+with res1 as (
+  select  * 
+  from customers c
+  left join members m on c.member_id = m.member_id
+  join invoices i on c.cust_id = i.cust_id
+  join menus me on i.menu_id = me.menu_id),
+
+res2 as (
+  select 
+    cust_name
+    , member_id
+    , member_addr
+    , sum (tran_qty) order_qty 
+  from res1
+  group by member_addr),
+
+qtybyregion as (select cust_region, order_qty from (
+  
+select *, 
+case when region = 'Bangkok' then 'Central'
+     when region = 'Chiang Mai' then 
+  'North'
+else 'Other' 
+end as cust_region
+from
+  
+  (select 
+  res2.cust_name
+  , res1.member_addr region
+  , order_qty
+  from res1 , res2 
+  where res1.cust_name = res2.cust_name
+  and res1.member_id is not null))
+
+group by cust_region
+order by order_qty desc),
+
+-- WITH = 3 (sales, cogs, pfmenu (result))
+-- Query = 4 (WHERE, GROUP BY, ORDER BY, WHEN)
+-- Subqueries 
+-- Result 'pfbymenu' shows selling price, sales amount, buying price, cogs amount, profit_loss, and also has the comment at price_analysis column that Which item needs to consider about its price.
+
+sales as (
+  select 
+  m.menu_name
+  , m.menu_price selling_price
+  , sum(i.tran_qty) qty
+  , m.menu_price * sum(i.tran_qty) sales_amount
+  from menus m , invoices i
+  where m.menu_id = i.menu_id
+  group by 1
+  order by 1),
+
+cogs as (
+  select menu
+  , sum(cost_pc) cogs_per_unit
+  , sum(cost_pc)*unit cogs_amount
+  from (
+ 
+  select
+  me.menu_name menu
+  , ing.ing_cost cost_pc
+  , sum(inv.tran_qty) unit
+  from invoices inv, ingrediants ing, menus me
+  where inv.menu_id = ing.menu_id
+  and ing.menu_id = me.menu_id
+  group by 1,2)
+
+group by menu),
+
+pfbymenu as (
+select *,
+case when selling - buying <0 then 'Need_Review_Price'
+else 'Suitable_Price'
+end Price_Analysis
+from (
+
+select 
+  menu
+  , qty
+  , selling_price selling
+  , sales_amount total_sales
+  , cogs_per_unit buying
+  , cogs_amount total_cogs
+  , sales_amount - cogs_amount profit_loss
+from sales , cogs
+where sales.menu_name = cogs.menu
+group by menu
+order by profit_loss desc ))
+
+--You can choose table here
+select * from ;```

@@ -1,0 +1,134 @@
+## Set function name = food_delivery
+food_delivery <-function() {
+
+  # Set introduction message and collect name and age. 
+  # If user age is under 20 years old, user will cannot access to order.
+  print("Welcome to PT Delivery")
+  print("Flatform of Food Delivery")
+  print("Please enter your information before start to order.")
+  print("--------------------------------")
+  print("Noted: Customer who is under 20 years old will not be allowed.")
+  
+  cat("What is your name:")
+  name <- readLines("stdin",1)
+  cat("What year was born (example:2023):")
+  bd <- readLines("stdin",1)
+    
+  # Convert data type from character to numeric
+  bd = as.numeric(bd)
+  ty = as.numeric(format(Sys.time(),"%Y")) 
+
+# Set while loop for running the food order process
+while(TRUE) {
+if (ty - bd >= 20) {
+  print("--------------------------------")
+  print(paste("Welcome back! Khun ",name))
+  cat("Please choose restaurant:
+      KFC: Enter = 1 
+      McDonald's: Enter = 2
+      Or Exit: Enter = 3 ")
+  restaurant <- readLines("stdin",1)
+
+  if (restaurant == 1) {
+    print("--------------------------------")
+    print("Thank you for order KFC")
+    print("Please input order quantity: ")
+    cat("Egg Tart (30 THB/piece) = ")
+    KFC_01 <- readLines("stdin",1)
+    cat("Fried Chicken (49 THB/piece) = ")
+    KFC_02 <- readLines("stdin",1)
+    
+    KFC_01 <- as.numeric(KFC_01)
+    KFC_02 <- as.numeric(KFC_02)
+
+    if (KFC_01 | KFC_02 > 0) {
+      print("--------------------------------")
+      print("Order Details: ")
+      print(paste("Received order from Khun ",name))
+      print(paste("Egg Tart = ",KFC_01," piece"))
+      print(paste("Fried Chicken = ",KFC_02," piece"))
+      cat("Do you need to check the bill of this order?
+          (Enter = Yes , No)")
+      bill_KFC <- readLines("stdin",1)
+  
+      if (bill_KFC == "Yes") {
+        print("--------------------------------")
+        print("Order Details: ")
+        print(paste("Customer name = ",name))
+        print(paste("Your order amount is ",(KFC_01*30)+(KFC_02*49)," THB"))
+        print("Do you discount code?")
+        cat("Special: Code for discount 50% (Enter = PTF50 , No)")
+        Free_KFC <- readLines("stdin",1)
+        if(Free_KFC=="PTF50") {
+        print("--------------------------------")
+        print("Order Confirmation (Use Code = PTF50): ")
+        print(paste("Customer name = ",name))
+        print(paste("Your order amount is ",((KFC_01*30)+(KFC_02*49))*0.95," THB"))
+        print(paste("Deduct from your code =",((KFC_01*30)+(KFC_02*49))*0.05," THB"))
+        print("Thank you very much for order with us.")
+        } else { 
+        print("--------------------------------")
+        print("Order Confirmation without code: ")
+        print(paste("Customer name = ",name))
+        print(paste("Your order amount is ",(KFC_01*30)+(KFC_02*49)," THB"))
+        print("Thank you very much for order with us.") }
+      } else { 
+        print("--------------------------------")
+        print("Thank you for using our service, Please re-order again.")}
+    } else { 
+      print("--------------------------------")
+      print("Thank you for using our service, Please come back again.")}  } 
+    else if (restaurant == 2) {
+    print("--------------------------------")
+    print(paste("Thank you for order McDonald's"))
+    print("Please input order quantity: ")
+    cat("Hamburger (99 THB/set) = ")
+    MC <- readLines("stdin",1)
+    MC <- as.numeric(MC)
+
+    if (MC > 0) {
+      print("--------------------------------")
+      print("Order Details: ")
+      print(paste("Received order from Khun ",name, "= ",MC," set"))
+      cat("Do you need to check the bill of this order?
+          (Enter = Yes , No)")
+      bill_MC <- readLines("stdin",1)
+     
+      if (bill_MC == "Yes") {
+        print("--------------------------------")
+        print("Order Details: ")
+        print(paste("Customer name = ",name))
+        print(paste("Your order amount is ",MC*99," THB"))
+        print("Do you discoun code?")
+        cat("Special: Code for discount 50% (Enter = PTF50 , No)")
+        Free_MC <- readLines("stdin",1)
+        if(Free_MC == "PTF50") {
+        print("--------------------------------")
+        print("Order Confirmation (Use Code = PTF50): ")
+        print(paste("Customer name = ",name))
+        print(paste("Your order amount is ",(MC*99)*0.95," THB"))
+        print(paste("Deduct from your code =",(MC*99)*0.05," THB"))
+        print("Thank you very much for order with us.")       
+        } else { 
+        print("--------------------------------")
+        print("Order Confirmation without code: ")
+        print(paste("Customer name = ",name))
+        print(paste("Your order amount is ",MC*99," THB"))
+        print("Thank you very much for order with us.") }    
+      } else { 
+      print("--------------------------------")  
+      print("Thank you for using our service, Please re-order again.") }
+    } else { 
+      print("--------------------------------")
+      print("Thank you for using our service, Please come back again.") }
+    } else { 
+      print("--------------------------------")
+      print("Thank you for coming. See you in the next time!")
+    break}
+    } else {
+  print("--------------------------------")
+  print("We are sorry. Your age is not allowed in this time.") 
+  break
+} } }
+    
+food_delivery()

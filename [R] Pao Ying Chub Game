@@ -1,0 +1,116 @@
+## Set function name is "games"
+games <- function () {
+
+  # Set introduction massege & collect player name 
+  print("Welcome To Pao_Ying_Chub Game!!")
+  print("-------------------------------")
+  print("This is Pao Ying Chub game. We have hammer, scissor, and paper as choices for playing")
+  print("You just choose one choice and BOT also choose it then let's see the result.") 
+  print("-------------------------------")
+  cat("Please enter your name: ")
+  user_name <- readLines("stdin",1)
+
+  # Set variable of choice, score, and sum of game played
+  choice <- c("hammer", "scissor", "paper")
+  user_score <- 0
+  com_score <- 0
+  number <- 0
+
+  # Set variable of win,loss message
+  win <-function() {print("You are Win!")}
+  loss <- function() {print("Sorry, you are Loss.")}
+
+  # Set function for summary when game finished.
+  summary <- function() {
+      if (user_score > com_score) {
+      print ("Game result = Win")
+      } else if (user_score == com_score) {
+      print ("Game result = Tie")
+      } else { 
+      print ("Game result = Loss")  } }
+
+  # Set while loop and if clause for playing game until player exit.
+  while (TRUE) {
+  print("-------------------------------")
+  print(paste("Welcome Khun",user_name,"!")) 
+  cat("Are you ready to play this game? 
+       Enter = Y: Yes , Press Any Key: Exit Game ")
+  user_ans <- readLines("stdin",1)
+
+  if (user_ans == "Y") {
+  print("-------------------------------")
+  print("We start the game now.")
+  print("Please choose one choice:") 
+  print(choice)
+  print("-------------------------------")
+  cat("Your selection: ")
+  user_choose <- readLines("stdin",1)
+  com_choose <- sample(choice,1)
+  print(paste("BOT selection: ",com_choose))
+    
+    if (user_choose == com_choose) {
+    print("-------------------------------")
+    print("You are Tie with BOT.")
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))  
+    } else if (user_choose == "scissor" & com_choose == "paper" ) {
+    print("-------------------------------")
+    win()
+    user_score <- user_score + 1
+    com_score <- com_score + 0
+    number <- number + 1
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))
+    } else if (user_choose == "scissor" & com_choose == "hammer") {
+    print("-------------------------------")
+    loss()
+    user_score <- user_score + 0
+    com_score <- com_score + 1
+    number <- number + 1
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))
+    } else if (user_choose == "paper" & com_choose == "scissor") {
+    print("-------------------------------")  
+    loss()
+    user_score <- user_score + 0
+    com_score <- com_score + 1
+    number <- number + 1
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))  
+    } else if (user_choose == "paper" & com_choose == "hammer") {
+    print("-------------------------------")  
+    win()
+    user_score <- user_score + 1
+    com_score <- com_score + 0
+    number <- number + 1
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))
+    } else if (user_choose == "hammer" &       com_choose == "paper") {
+    print("-------------------------------")  
+    loss()
+    user_score <- user_score + 0
+    com_score <- com_score + 1
+    number <- number + 1
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))
+    } else if (user_choose == "hammer" &        com_choose == "scissor") {
+    print("-------------------------------")  
+    win()
+    user_score <- user_score + 1
+    com_score <- com_score + 0
+    number <- number + 1
+    print(paste(user_name,"Score: ",user_score))
+    print(paste("BOT score: ",com_score))
+   }    } else {
+      print("-------------------------------")
+      print ("Thank you for play game with us.")
+      print("-------------------------------")
+      print ("Summary your game:") 
+      print(paste("Total game played =",number))
+      print(paste(user_name,"score =",user_score))
+      print(paste("BOT score =",com_score))
+      summary()
+      break 
+  }  }  }
+
+games()

@@ -30,7 +30,7 @@ This portfolio will contain all of my data projects.
 ## Python 
 1. [Drinker Classification by Body Signal](https://github.com/prateeppyntk/data-projects/tree/a7daff6b517ce19dc6acb92ead5f77252f4dc96f/Drinker%20Classification%20by%20Body%20Signal)
   
-2. [Fraud Detection of Online Payment](https://github.com/prateeppyntk/data-projects/tree/99e4385ab85154468f5482e2ec6e661530248a25/Sales%20Analysis%20Dashboard%20(Using%20The%20Retail%20Sales%20Dataset))
+2. [Fraud Detection of Online Payment](https://github.com/prateeppyntk/data-projects/tree/d2440bfb22989124f0f4063ead7d892fcf1d3df3/Fraud%20Detection%20of%20Online%20Payment)
   
 3. [Unlocking Customer Satisfaction: Sentiment, Topic & Feature Analysis](https://github.com/prateeppyntk/data-projects/tree/99e4385ab85154468f5482e2ec6e661530248a25/Unlocking%20Customer%20Satisfaction%3A%20Sentiment%2C%20Topic%20%26%20Feature%20Analysis)
 

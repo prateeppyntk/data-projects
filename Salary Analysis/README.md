@@ -1,4 +1,4 @@
-# Sales Analysis Dashboard (Using The Retail Sales Dataset)
+# Salary Analysis
 
 
 ## About Project
@@ -14,7 +14,8 @@
 
 
 ## Tools 
-Power BI
+1. SQL
+2. Looker Studio
 
 
 ## Dashboard

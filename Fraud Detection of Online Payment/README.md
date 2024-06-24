@@ -1,4 +1,4 @@
-# Fraud Detection of Online Payment Project
+# Fraud Detection of Online Payment
 
 
 ## About Project

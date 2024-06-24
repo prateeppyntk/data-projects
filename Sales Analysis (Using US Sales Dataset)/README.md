@@ -15,6 +15,6 @@ Tableau Public
 
 
 ## Dashboard
-![US_sales_dataset.png](US_sales_dataset.png)
+![US_sales_dashboard.png](US_sales_dashboard.png)
 
 [View on Tableau Public](https://public.tableau.com/views/USSalesData2018-2020/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)

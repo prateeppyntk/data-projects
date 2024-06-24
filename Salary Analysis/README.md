@@ -2,21 +2,21 @@
 
 
 ## About Project
-* This project is built on the retail sales dataset that began the fiscal year on March in every year that need to create a new dimension for the custom date. 
+* This project is built on the salary dataset. Because this dataset contains the locations of companies in many countries, But we need to analyze only the US country. So we will filter it using PostgreSQL first, then we will create a dashboard for analysis salary in each dimension by Looker Studio.
 
-* It shows the overview of the total sales amount until drill into each product category and product name in last year, shows about expense in each customer segment, and shows trend of total sales amount in each month or quarter.
 
 ## Hypothesis 
-1. To explore total and average income on monthly and quarterly basis.
-2. To survey the number of customers and see the total transactions over the past 1 year.
-3. To know the customer segment ratio to sales amount.
-4. To survey revenue in each product category and product name.
+1. To explore min, max, and average salary and also number of employee in each company size and work year.
+2. To analyze average salary across to various dimensions including type of remote work, experience work, and employee residence.
 
 
 ## Tools 
-1. SQL
+1. PostgreSQL 
 2. Looker Studio
 
 
 ## Dashboard
-![retail_sales_data.jpg](retail_sales_data.jpg)
+![US_salary_dashboard.jpg](US_salary_dashboard.jpg)
+
+
+[View on Looker Studio](https://lookerstudio.google.com/reporting/5c8933cf-d94d-4ec8-85ab-0dc310101103)

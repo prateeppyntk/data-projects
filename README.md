@@ -6,13 +6,13 @@ This portfolio will contain all of my data projects.
 # Content of Projects
 
 - SQL & Looker Studio
-    1. [US Salary Analysis Dashboard](https://github.com/prateeppyntk/data-projects/tree/082b76b0ebb6e15296a5d45ce96c144264a405b2/Salary%20Analysis)
+    1. [US Salary Analysis Dashboard](https://github.com/prateeppyntk/data-projects/tree/4a8d5a705e4e4521be8de3707ba99e2b07026dc2/US%20Salary%20Analysis%20Dashboard)
 
 - Power BI 
-    1. [Retail Sales Analysis Dashboard](https://github.com/prateeppyntk/data-projects/tree/f188fd6f5183712306ab457484278df8e93a04f5/Sales%20Analysis%20(Using%20The%20Retail%20Sales%20Dataset))
+    1. [Retail Sales Analysis Dashboard](https://github.com/prateeppyntk/data-projects/tree/4a8d5a705e4e4521be8de3707ba99e2b07026dc2/Retail%20Sales%20Analysis%20Dashboard)
 
 - Tableau Public 
-    1. [US Sales Analysis Dashboard](https://github.com/prateeppyntk/data-projects/tree/f188fd6f5183712306ab457484278df8e93a04f5/Sales%20Analysis%20(Using%20US%20Sales%20Dataset))
+    1. [US Sales Analysis Dashboard](https://github.com/prateeppyntk/data-projects/tree/4a8d5a705e4e4521be8de3707ba99e2b07026dc2/US%20Sales%20Analysis%20Dashboard)
   
 - Python 
     1. [Drinker Classification by Body Signal](https://github.com/prateeppyntk/data-projects/tree/99e4385ab85154468f5482e2ec6e661530248a25/Drinker%20Classification%20By%20Body%20Signal)

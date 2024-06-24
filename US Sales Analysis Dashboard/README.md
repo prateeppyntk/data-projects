@@ -11,7 +11,7 @@
 
 
 ## Tools 
-Tableau Public
+1. Tableau Public
 
 
 ## Dashboard

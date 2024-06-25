@@ -6,7 +6,7 @@ DROP table menus;
 DROP table customers;
 DROP table members;
 DROP table invoices;
-DROP table ingrediants;
+DROP table ingredients;
 
 --Create and insert table menus 
 CREATE TABLE menus (
@@ -61,13 +61,13 @@ insert into invoices values
   (9 , 123004 ,1006 , 1 ),
   (10 , 123005 ,1004 , 2 );
 
---Create and insert table ingrediants
-CREATE TABLE ingrediants (
+--Create and insert table ingredients
+CREATE TABLE ingredients (
   ing_no int ,
   ing_name text,
   menu_id int,
   ing_cost real);
-insert into ingrediants values 
+insert into ingredients values 
   (1.1 , 'cheese' , 1001 , 50.5),
   (1.2 , 'flour' , 1001 , 50),
   (1.2 , 'flour' , 1002 , 50),
@@ -117,7 +117,7 @@ update invoices
 -- WITH = 3 (res1, res2, qtybyregion (result))
 -- Query = 5 (JOIN, WHERE, GROUP BY, ORDER BY, WHEN)
 -- Subqueries 
--- Result 'qtybyregion' shows the total of order quanity in each regions in Thailand
+-- Result 'qtybyregion' shows the total of order quanity in each region in Thailand
   
 
 with res1 as (
@@ -184,7 +184,7 @@ cogs as (
   me.menu_name menu
   , ing.ing_cost cost_pc
   , sum(inv.tran_qty) unit
-  from invoices inv, ingrediants ing, menus me
+  from invoices inv, ingredients ing, menus me
   where inv.menu_id = ing.menu_id
   and ing.menu_id = me.menu_id
   group by 1,2)

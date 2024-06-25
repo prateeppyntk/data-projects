@@ -2,7 +2,7 @@
 
 
 ## About Project
-* This project is built on the retail sales dataset that began the fiscal year on March in every year that need to create a new dimension for the custom date. 
+* This project is built on the retail sales dataset that began the fiscal year in March in every year that need to create a new dimension for the custom date. 
 
 * It shows the overview of the total sales amount until drill into each product category and product name in last year, shows about expense in each customer segment, and shows trend of total sales amount in each month or quarter.
 
